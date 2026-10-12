@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetroPulse | Smart City Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🏙️ MetroPulse</div>
+        <nav>
+            <a href="#services">Public Services</a>
+            <a href="#transport">Transport</a>
+            <a href="#contact">Citizen Feedback</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Building the City of Tomorrow</h1>
+        <p>Your centralized portal for sustainable urban development, public services, and smart transit.</p>
+        <button onclick="cityAlert()">Check City Status</button>
+    </section>
+
+    <section id="services" class="section">
+        <h2>Smart Public Services</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>Digital Governance</h3>
+                <p>Access municipal documents, pay utility bills, and track civic complaints online instantly.</p>
+            </div>
+            <div class="card">
+                <h3>Smart Waste Management</h3>
+                <p>Real-time bin monitoring and eco-friendly recycling pickup scheduling across sectors.</p>
+            </div>
+            <div class="card">
+                <h3>Green Energy Grids</h3>
+                <p>Monitoring solar power distribution and automated street lighting for energy conservation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="transport" class="section light-bg">
+        <h2>Smart Public Transportation</h2>
+        <p>Live tracking of electric buses, metro schedules, and smart parking availability in real time.</p>
+        <button class="action-btn" onclick="trackTransport()">View Live Transit Map</button>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Citizen Helpdesk & Feedback</h2>
+        <form onsubmit="submitFeedback(event)">
+            <input type="text" id="citizenName" placeholder="Your Name" required>
+            <input type="email" id="citizenEmail" placeholder="Your Email" required>
+            <textarea id="citizenMsg" placeholder="Your Feedback or Issue" rows="4" required></textarea>
+            <button type="submit" class="submit-btn">Submit Request</button>
+        </form>
+        <p id="responseMsg"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MetroPulse Smart City Initiative. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
